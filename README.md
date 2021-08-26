@@ -14,7 +14,7 @@ Mouse driven: SoundPaint will get the color code under the mouse or fingertip an
 
 Bug driven: it will get the color from under a little bug that will crawl on the drawing walking in random directions.
 
-There is a grayscale mode.
+There is a grayscale mode. You only paint with shades of gray and instead of hue, brightness is used to tune the sound.
 
 You can choose between the 7 octaves of a real piano, and flip the color to sound mapping, so high pitch is red instead of blue.
 
