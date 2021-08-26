@@ -9,7 +9,9 @@ You need a processing IDE and import the MINIM audio library.
 There s a colors palette in the shape of a piano, each key color is calibrated to sound like that piano key when the LISTEN mode is on.
 
 There are two LISTEN modes:
+
 Mouse driven: SoundPaint will get the color code under the mouse or fingertip and translate it to sound in a configurable relationship between the colors spectrum and the sound spectrum.
+
 Bug driven: it will get the color from under a little bug that will crawl on the drawing walking in random directions.
 
 There is a grayscale mode.
