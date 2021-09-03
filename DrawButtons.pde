@@ -15,20 +15,18 @@ void DrawButtons() {
   //draw semitones Mapped
   fill(0, 0, 50);
   strokeWeight(2);
-  line(map(85, 0, 800, 0, width), map(21, 0, 600, 0, height), map(85, 0, 800, 0, width), map(64, 0, 600, 0, height));
-  line(map(202, 0, 800, 0, width), map(21, 0, 600, 0, height), map(202, 0, 800, 0, width), map(64, 0, 600, 0, height));
-  line(map(289, 0, 800, 0, width), map(21, 0, 600, 0, height), map(289, 0, 800, 0, width), map(64, 0, 600, 0, height));
-  line(map(376, 0, 800, 0, width), map(21, 0, 600, 0, height), map(376, 0, 800, 0, width), map(64, 0, 600, 0, height));
-  line(map(492, 0, 800, 0, width), map(21, 0, 600, 0, height), map(492, 0, 800, 0, width), map(64, 0, 600, 0, height));
-  line(map(608, 0, 800, 0, width), map(21, 0, 600, 0, height), map(608, 0, 800, 0, width), map(64, 0, 600, 0, height));
-  line(map(695, 0, 800, 0, width), map(21, 0, 600, 0, height), map(695, 0, 800, 0, width), map(64, 0, 600, 0, height));
+  line(map(89, 0, 800, 0, width), map(21, 0, 600, 0, height), map(89, 0, 800, 0, width), map(64, 0, 600, 0, height));
+  line(map(215, 0, 800, 0, width), map(21, 0, 600, 0, height), map(215, 0, 800, 0, width), map(64, 0, 600, 0, height));
+  line(map(311, 0, 800, 0, width), map(21, 0, 600, 0, height), map(311, 0, 800, 0, width), map(64, 0, 600, 0, height));
+  line(map(404, 0, 800, 0, width), map(21, 0, 600, 0, height), map(404, 0, 800, 0, width), map(64, 0, 600, 0, height));
+  line(map(532, 0, 800, 0, width), map(21, 0, 600, 0, height), map(532, 0, 800, 0, width), map(64, 0, 600, 0, height));
+  line(map(658, 0, 800, 0, width), map(21, 0, 600, 0, height), map(658, 0, 800, 0, width), map(64, 0, 600, 0, height));
   strokeWeight(1);
-  rect(map(62, 0, 800, 0, width), map(15, 0, 600, 0, height), map(48, 0, 800, 0, width), map(38, 0, 600, 0, height));
-  rect(map(178, 0, 800, 0, width), map(15, 0, 600, 0, height), map(48, 0, 800, 0, width), map(38, 0, 600, 0, height));
-  rect(map(352, 0, 800, 0, width), map(15, 0, 600, 0, height), map(48, 0, 800, 0, width), map(38, 0, 600, 0, height));
-  rect(map(468, 0, 800, 0, width), map(15, 0, 600, 0, height), map(48, 0, 800, 0, width), map(38, 0, 600, 0, height));
-  rect(map(584, 0, 800, 0, width), map(15, 0, 600, 0, height), map(48, 0, 800, 0, width), map(38, 0, 600, 0, height));
-  rect(map(584, 0, 800, 0, width), map(15, 0, 600, 0, height), map(48, 0, 800, 0, width), map(38, 0, 600, 0, height));
+  rect(map(65, 0, 800, 0, width), map(15, 0, 600, 0, height), map(48, 0, 800, 0, width), map(38, 0, 600, 0, height));
+  rect(map(191, 0, 800, 0, width), map(15, 0, 600, 0, height), map(48, 0, 800, 0, width), map(38, 0, 600, 0, height));
+  rect(map(381, 0, 800, 0, width), map(15, 0, 600, 0, height), map(48, 0, 800, 0, width), map(38, 0, 600, 0, height));
+  rect(map(508, 0, 800, 0, width), map(15, 0, 600, 0, height), map(48, 0, 800, 0, width), map(38, 0, 600, 0, height));
+  rect(map(635, 0, 800, 0, width), map(15, 0, 600, 0, height), map(48, 0, 800, 0, width), map(38, 0, 600, 0, height));
 
 
   //draw BLANK button mapped
@@ -107,22 +105,18 @@ void DrawButtons() {
   textSize(map(16, 0, 600, 0, height));
   text("LISTEN", map(690, 0, 800, 0, width), map(581, 0, 600, 0, height));
 
-
-  //map(Val, 0, 800, 0 , width)
-  //map(Val, 0, 600, 0 , height)
-
   //Draw DRPR button mapped
   fill(0, 0, 255);
-  rect(map(717, 0, 800, 0, width), map(70, 0, 600, 0 , height), map(30, 0, 800, 0, width), map(30, 0, 600, 0 , height));
+  rect(map(710, 0, 800, 0, width), map(70, 0, 600, 0 , height), map(40, 0, 800, 0, width), map(30, 0, 600, 0 , height));
   fill(0);
-  text("Drpr", map(720, 0, 800, 0 , width), map(90, 0, 600, 0 , height));
+  text("Drop", map(715, 0, 800, 0 , width), map(90, 0, 600, 0 , height));
 
   //Back for Octave slider mapped
   stroke(0);
   fill(0, 0, 70);
   rect(map(752, 0, 800, 0, width), 0, map(47, 0, 800, 0 , width), height-1);
 
-  //Draw Octave slider
+  //Draw Octave slider mapped
   stroke(0);
   int o;
   for (o=0; o<7; o++)
@@ -137,107 +131,101 @@ void DrawButtons() {
   fill(0, 0, 255);
   text("octave", map(760, 0, 800, 0 , width), map(595, 0, 600, 0 , height));
 
-  //Back for PenSize
+  
+  //Back for PenSize mapped
   stroke(0);
   fill(0, 0, 100);
-  rect(335, height-35, 165, 20);
+  rect(map(335, 0, 800, 0 , width), map(560, 0, 600, 0 , height), map(165, 0, 800, 0 , width), map(30, 0, 600, 0 , height));
   //Draw PenSize selector
   fill(0);
-  triangle(350, height-25, 479, height-20, 479, height-30);
+  triangle(map(350, 0, 800, 0 , width), map(575, 0, 600, 0 , height), map(479, 0, 800, 0 , width), map(580, 0, 600, 0 , height), map(479, 0, 800, 0 , width),map(570, 0, 600, 0 , height));
   ellipseMode(CENTER);
-  ellipse(345, height-25, 2, 2);
-  ellipse(490, height-25, 15, 15);
+  ellipse(map(345, 0, 800, 0 , width), map(575, 0, 600, 0 , height), 5, 5);
+  ellipse(map(490, 0, 800, 0 , width), map(575, 0, 600, 0 , height), map(15, 0, 800, 0 , width), map(15, 0, 800, 0 , width));
   fill(255);
-  text(PenSize, 410, 580);
-
-  //Draw Inv button
+  text(PenSize, map(410, 0, 800, 0 , width), map(580, 0, 600, 0 , height));
+  
+  //Draw Inv button mapped
+  
   fill(255);
-  stroke(0);
-  rect(width-48, height/2-20, 15, 40);
-  rect(width-63, height/2-20, 15, 40);
-  line(width-55, height/2-8, width-55, height/2+14);
-  triangle(width-55, height/2-15, width-59, height/2-8, width-51, height/2-8);
-  line(width-40, height/2-14, width-40, height/2+10);
-  triangle(width-40, height/2+15, width-44, height/2+8, width-36, height/2+8);
+  rect(map(630, 0, 800, 0, width), map(70, 0, 600, 0 , height), map(67, 0, 800, 0, width), map(30, 0, 600, 0 , height));
+  fill(0);
   if (Inv==false) {
-    noFill();
-    rect(width-65, height/2-22, 19, 44);
+    text("RED>BLUE", map(633, 0, 800, 0 , width), map(90, 0, 600, 0 , height));
   }
   if (Inv==true) {
-    noFill();
-    rect(width-50, height/2-22, 19, 44);
+    text("BLUE>RED", map(633, 0, 800, 0 , width), map(90, 0, 600, 0 , height));
   }
+  
 
-  // draw color Piker
+  // draw color Piker mapped
   if (Inv==false) {
     if (BW==false) {
       int p;
-      for (p=0; p<735; p++) {
-        stroke (map(p, 0, 734, 255, 0), 255, 255);
-        line (743-p, 1, 743-p, 19);
+      for (p=0; p<map(735, 0, 800, 0 , width); p++) {
+        stroke (map(p, 0, map(734, 0, 800, 0 , width), 226, 0), 255, 255);
+        line (map(741, 0, 800, 0 , width)-p, 1, map(741, 0, 800, 0 , width)-p, 19);
       }
       stroke(0);
       noFill();
-      rect(ColOff, 0, 736, 20);
+      rect(ColOff, 0, map(736, 0, 800, 0 , width), 20);
     }
 
     if (BW==true) {
       int p;
-      for (p=0; p<735; p++) {
-        stroke (0, 0, map(p, 0, 734, 255, 0));
-        line (743-p, 1, 743-p, 19);
+      for (p=0; p<map(735, 0, 800, 0 , width); p++) {
+        stroke (0, 0, map(p, 0, map(734, 0, 800, 0 , width), 255, 0));
+        line (map(741, 0, 800, 0 , width)-p, 1, map(741, 0, 800, 0 , width)-p, 19);
       }
       stroke(0);
       noFill();
-      rect(ColOff, 0, 736, 20);
+      rect(ColOff, 0, map(736, 0, 800, 0 , width), 20);
     }
   }     
 
   if (Inv==true) {
     if (BW==false) {
       int p;
-      for (p=0; p<735; p++) {
-        stroke (map(p, 0, 734, 255, 0), 255, 255);
+      for (p=0; p<map(735, 0, 800, 0 , width); p++) {
+        stroke (map(p, 0, map(734, 0, 800, 0 , width), 255, 0), map(255, 0, 800, 0 , width), 255);
         line (ColOff+1+p, 1, ColOff+1+p, 19);
       }
       stroke(0);
       noFill();
-      rect(ColOff, 0, 736, 20);
+      rect(ColOff, 0, map(736, 0, 800, 0 , width), 20);
     }
 
     if (BW==true) {
       int p;
-      for (p=0; p<735; p++) {
-        stroke (0, 0, map(p, 0, 734, 255, 0));
+      for (p=0; p<map(735, 0, 800, 0 , width); p++) {
+        stroke (0, 0, map(p, 0, map(734, 0, 800, 0 , width), 255, 0));
         line (ColOff+1+p, 1, ColOff+1+p, 19);
       }
       stroke(0);
       noFill();
-      rect(ColOff, 0, 736, 20);
+      rect(ColOff, 0, map(736, 0, 800, 0 , width), 20);
     }
   }
 
 
-
-
-  //draw color selector buttons
+  //draw color selector buttons mapped
   if (BW==false) {
 
     if (Inv==false) {
       stroke(0);
-      for (n=0; n<13; n++)
+      for (n=0; n<12; n++)
       {
         fill(colors[12-n], 255, 255);
-        rect(ColOff+n*ColSpacing, 20, 40, 30);
+        rect(ColOff+n*ColSpacing, map(20, 0, 600, 0 , height), map(40, 0, 800, 0 , width), map(30, 0, 600, 0 , height));
       }
     }
 
     if (Inv==true) {
       stroke(0);
-      for (v=0; v<13; v++)
+      for (v=0; v<12; v++)
       {
         fill(colorsV[v], 255, 255);
-        rect(ColOff+v*ColSpacing, 20, 40, 30);
+        rect(ColOff+v*ColSpacing,  map(20, 0, 600, 0 , height), map(40, 0, 800, 0 , width), map(30, 0, 600, 0 , height));
       }
     }
   }
@@ -246,37 +234,43 @@ void DrawButtons() {
 
     if (Inv==false) {
       stroke(0);
-      for (n=0; n<13; n++)
+      for (n=0; n<12; n++)
       {
         fill(0, 0, colors[12-n]);
-        rect(ColOff+n*ColSpacing, 20, 40, 30);
+        rect(ColOff+n*ColSpacing,  map(20, 0, 600, 0 , height), map(40, 0, 800, 0 , width), map(30, 0, 600, 0 , height));
       }
     }
 
     if (Inv==true) {
       stroke(0);
-      for (v=0; v<13; v++)
+      for (v=0; v<12; v++)
       {
         fill(0, 0, colorsV[v]);
-        rect(ColOff+v*ColSpacing, 20, 40, 30);
+        rect(ColOff+v*ColSpacing,  map(20, 0, 600, 0 , height), map(40, 0, 800, 0 , width), map(30, 0, 600, 0 , height));
       }
     }
   }
+  
+  
 
-  //Legends
 
+  
+  //map(Val, 0, 800, 0 , width)
+  //map(Val, 0, 600, 0 , height)
+
+  //Legends mapped
+  int off = int (map(6, 0, 800, 0 , width));
   fill(0, 0, 0);
-  text("C", 24, 39);
-  text("C^", ColOff+16+1*ColSpacing, 39);
-  text("D", ColOff+16+2*ColSpacing, 39);
-  text("D^", ColOff+16+3*ColSpacing, 39);
-  text("E", ColOff+16+4*ColSpacing, 39);
-  text("F", ColOff+16+5*ColSpacing, 39);
-  text("F^", ColOff+16+6*ColSpacing, 39);
-  text("G", ColOff+16+7*ColSpacing, 39);
-  text("G^", ColOff+16+8*ColSpacing, 39);
-  text("A", ColOff+16+9*ColSpacing, 39);
-  text("A^", ColOff+16+10*ColSpacing, 39);
-  text("B", ColOff+16+11*ColSpacing, 39);
-  text("C2", ColOff+16+12*ColSpacing, 39);
+  text("C", map(23, 0, 800, 0 , width), map(39, 0, 600, 0 , height));
+  text("C^", off + ColOff+16+1*ColSpacing, map(39, 0, 600, 0 , height));
+  text("D", off +ColOff+16+2*ColSpacing, map(39, 0, 600, 0 , height));
+  text("D^", off +ColOff+16+3*ColSpacing, map(39, 0, 600, 0 , height));
+  text("E", off +ColOff+16+4*ColSpacing, map(39, 0, 600, 0 , height));
+  text("F", off +ColOff+16+5*ColSpacing, map(39, 0, 600, 0 , height));
+  text("F^", off +ColOff+16+6*ColSpacing, map(39, 0, 600, 0 , height));
+  text("G", off +ColOff+16+7*ColSpacing, map(39, 0, 600, 0 , height));
+  text("G^", off +ColOff+16+8*ColSpacing, map(39, 0, 600, 0 , height));
+  text("A", off +ColOff+16+9*ColSpacing, map(39, 0, 600, 0 , height));
+  text("A^", off +ColOff+16+10*ColSpacing, map(39, 0, 600, 0 , height));
+  text("B", off +ColOff+16+11*ColSpacing, map(39, 0, 600, 0 , height));
 }
