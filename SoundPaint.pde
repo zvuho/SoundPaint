@@ -19,7 +19,7 @@ Agente juan;
   //array of inverted sinth notes
   int v=0;
   int colorsV[]= {
-    254, 239, 223, 206, 188, 169, 148, 127, 104, 80, 55, 28, 0
+    239, 223, 206, 188, 169, 148, 127, 104, 80, 55, 28, 0
   };
 
 //Modified version of PixelArray 1.2.1
@@ -31,9 +31,11 @@ float amp=0; //Link Variable between PixelArray and Minim
 
 //Paint VariableS
 int oldX=0, oldY=0, drawSat=255, drawBri=255;
-int ColSpacing=58;
-int ColOff=8;
-int PenSize=30;
+int ColSpacing= int (map(58, 0,800, 0 , width)*15);
+int ColOff = int (map(8, 0, 800, 0 , width)*10);
+
+
+int PenSize= int (map(30, 0, 800, 0 , width)*10);
 int huePik;
 boolean BW=false;
 boolean Drpr=false;
@@ -48,11 +50,16 @@ import ddf.minim.ugens.*;
 Minim       minim;
 AudioOutput out;
 Oscil       wave;
+
+void settings(){
+fullScreen();
+  smooth();
+
+}
  
 void setup() {
-  size (800, 600);
   background(255);
-  smooth();
+
   frameRate(123);
   colorMode (HSB, 255);
  
@@ -74,9 +81,7 @@ void setup() {
  
  
 void draw(){
-println("MouseX=" + (mouseX) + "MouseY=" + mouseY);
- 
-  
+//println("MouseX=" + (mouseX) + "MouseY=" + mouseY);  
  
  //MODO = 0 => Run Paint color
   if (Modo==0) {
