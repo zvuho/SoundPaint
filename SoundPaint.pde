@@ -48,11 +48,16 @@ import ddf.minim.ugens.*;
 Minim       minim;
 AudioOutput out;
 Oscil       wave;
+
+void settings(){
+fullScreen();
+  smooth();
+
+}
  
 void setup() {
-  size (800, 600);
   background(255);
-  smooth();
+
   frameRate(123);
   colorMode (HSB, 255);
  
