@@ -1,6 +1,12 @@
 void DrawButtons() {
 
 
+
+  
+  //map(Val, 0, 800, 0 , width)
+  //map(Val, 0, 600, 0 , height)
+  
+  
   //back for colors Mapped
 
 
@@ -187,7 +193,7 @@ void DrawButtons() {
     if (BW==false) {
       int p;
       for (p=0; p<map(735, 0, 800, 0 , width); p++) {
-        stroke (map(p, 0, map(734, 0, 800, 0 , width), 255, 0), map(255, 0, 800, 0 , width), 255);
+        stroke (map(p, 0, map(734, 0, 800, 0 , width), 226, 0), map(255, 0, 800, 0 , width), 255);
         line (ColOff+1+p, 1, ColOff+1+p, 19);
       }
       stroke(0);
@@ -250,13 +256,6 @@ void DrawButtons() {
       }
     }
   }
-  
-  
-
-
-  
-  //map(Val, 0, 800, 0 , width)
-  //map(Val, 0, 600, 0 , height)
 
   //Legends mapped
   int off = int (map(6, 0, 800, 0 , width));

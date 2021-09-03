@@ -81,11 +81,7 @@ void setup() {
  
  
 void draw(){
-  println(ColSpacing);
-//println("MouseX=" + (mouseX) + "MouseY=" + mouseY);
-
- 
-  
+//println("MouseX=" + (mouseX) + "MouseY=" + mouseY);  
  
  //MODO = 0 => Run Paint color
   if (Modo==0) {
