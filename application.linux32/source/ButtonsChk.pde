@@ -1,7 +1,11 @@
+ 
   void ButtonsChk(){
-  
-      //check if the BLANK button is pressed
-      if (inside (5, 70, 35, 100)) {
+    //map(Val, 0, 800, 0 , width)
+  //map(Val, 0, 600, 0 , height)
+    
+    
+      //check if the BLANK button is pressed mapped
+      if (inside (map(5, 0, 800, 0 , width), map(70, 0, 600, 0 , height), map(35, 0, 800, 0 , width), map(100, 0, 600, 0 , height))) {
         if (BW==false) {
 
           background(0, 0, 255);
@@ -12,103 +16,93 @@
         }
       }
 
-      //Drpr button
-      if (inside(717, 70, 747, 100)) {
+      //Drpr button mapped
+      if (inside(map(710, 0, 800, 0 , width), map(70, 0, 600, 0 , height), map(750, 0, 800, 0 , width), map(100, 0, 600, 0 , height))) {
         Drpr=true;
         Modo=1;
       }
 
 
-      //check if LISTEN button is pressed
-      if (inside(width-120, height-40, width-60, height-10)) {
+      //check Listen boton mapped
+      if (inside(map(680, 0, 800, 0, width), map(560, 0, 600, 0, height), map(740, 0, 800, 0, width),map(590, 0, 600, 0, height))) {
         Modo = 1;
       }  
       
-      //check if AUTO button is pressed
-      if (inside(650, height-40, 670, height-10)) {
+      //check if AUTO button mapped
+      if (inside(map(650, 0, 800, 0, width), map(560, 0, 600, 0, height), map(670, 0, 800, 0, width), map(590, 0, 600, 0, height))) {
        Auto = true;
       }
 
-      //check if Mouse button is pressed
-      if (inside(630, height-40, 649, height-10)) {
+      //check if Mouse button mapped
+      if (inside(map(630, 0, 800, 0, width), map(560, 0, 600, 0, height), map(650, 0, 800, 0, width), map(590, 0, 600, 0, height))) {
        Auto = false;
       }
 
-      //Check if Inv button
-      if (inside(width-48, height/2-20, width-33, height/2+20)) {
-      Inv=true;
-      noFill();
-      stroke(255);
-      rect(width-65, height/2-22, 19, 44);
+      //Check if Inv button mapped
+      if (inside(map(630, 0, 800, 0, width), map(70, 0, 600, 0 , height), map(697, 0, 800, 0, width), map(100, 0, 600, 0 , height))) {
+      Inv=!Inv;
       }
 
-      //Check if Inv2 button
-      if (inside(width-63, height/2-20, width-48, height/2+20)) {         
-        Inv=false;
-       }
-
-      //check if BW button is pressed
-      if (inside(240, height-40, 255, height-10)) {
+      //check if BW button is pressed mapped
+      if (inside(map(240, 0, 800, 0, width), map(560, 0, 600, 0 , height), map(255, 0, 800, 0, width), map(590, 0, 600, 0 , height))) {
         background(150, 50, 100);
         drawSat = 0;
         BW=true;
       }
 
-      //check if C button is pressed
-      if (inside(265, height-40, 280, height-10)) {
+      //check if C button is pressed mapped
+      if (inside(map(265, 0, 800, 0, width), map(560, 0, 600, 0 , height), map(280, 0, 800, 0, width), map(590, 0, 600, 0 , height))) {
         background(0, 0, 255);
         BW=false;
       }
 
-      //check if HueSlider is clicked
-      if (inside(ColOff, 0, width-65, 19)) {
+      //check if HueSlider is clicked mapped
+      if (inside(ColOff, 0, map(741, 0, 800, 0 , width), map(19, 0, 600, 0 , height))) {
         drawSat = 255;
         drawBri = 255;
         Huepik();
       }
-            //check if OCTAVE is clicked
-      if (inside(width-30, 20, width-5, height-20)) {
-octave();
-//println(Octave);
+            //check if OCTAVE is clicked mapped
+      if (inside(map(770, 0, 800, 0 , width), map(20, 0, 600, 0 , height), map(795, 0, 800, 0 , width), map(580, 0, 600, 0 , height))) {
+          int o;
+  for (o=0;o<7;o++) {
+    if (mouseY>map(20, 0, 600, 0 , height)+o*((map(560, 0, 600, 0 , height))/7) && mouseY< (map(20, 0, 600, 0 , height)+(1+o)*(map(560, 0, 600, 0 , height))/7)) Octave=6-o;
+            }
       }
       
-      //check if PenSize is clicked
-      if (inside(335, 565, 500,585)) {
-Pensize();
+      //check if PenSize is clicked mapped
+      if (inside(map(335, 0, 800, 0 , width), map(560, 0, 600, 0 , height), map(500, 0, 800, 0 , width), map(590, 0, 600, 0 , height))) {
+        PenSize=(mouseX - int(map(335, 0, 800, 0 , width)));
       }
       
-       //color selector
+       //color selector mapped A LOT OF REDUNDANT CODE!!
       if (BW==false) {
 
           if (Inv==false) {
             for (n=0;n<13;n++) {
 
-              if (inside(ColOff+n*ColSpacing, 20, 40+ColOff+n*ColSpacing, 65)) {
+              if (inside(ColOff+n*ColSpacing, map(20, 0, 800, 0 , width), 40+ColOff+n*ColSpacing, map(65, 0, 600, 0 , height))) {
 
-                if (mouseButton==LEFT) {
+     
                   huePik = colors[12-n];
                   drawSat=255;
                   drawBri=255;
-                }
-                else {
-                  background(colors[12-n], 255, 255);
-                }
+ 
+              
+                  // background(colors[12-n], 255, 255); 
               }
             }
           }
           if (Inv==true) {
             for (v=0;v<13;v++) {
 
-              if (inside(ColOff+v*ColSpacing, 20, 40+ColOff+n*ColSpacing, 65)) {
-
-                if (mouseButton==LEFT) {
+              if (inside(ColOff+v*ColSpacing,  map(20, 0, 800, 0 , width), 40+ColOff+n*ColSpacing, map(65, 0, 600, 0 , height))) {
                   huePik = colorsV[v];
                   drawSat=255;
                   drawBri=255;
-                }
-                else {
-                  background(colorsV[v], 255, 255);
-                }
+               
+                 // background(colorsV[v], 255, 255);
+                
               }
             }
           }
@@ -118,18 +112,12 @@ Pensize();
          if (Inv==false) {
             for (n=0;n<13;n++) {
 
-              if (inside(ColOff+n*ColSpacing, 20, 40+ColOff+n*ColSpacing, 65)) {
+              if (inside(ColOff+n*ColSpacing, map(20, 0, 800, 0 , width), 40+ColOff+n*ColSpacing, map(65, 0, 600, 0 , height))) {
 
-                if (mouseButton==LEFT) {
                   huePik = colors[12-n];
-
-                 // println  ("Pik" + Pik);
                   drawSat=0;
                   drawBri=huePik;
-                }
-                else {
-                  background(0, 0, colors[12-n]);
-                }
+                
               }
             }
           }
@@ -137,17 +125,13 @@ Pensize();
           if (Inv==true) {
             for (v=0;v<13;v++) {
 
-              if (inside(ColOff+v*ColSpacing, 20, 40+ColOff+n*ColSpacing, 65)) {
+              if (inside(ColOff+v*ColSpacing, map(20, 0, 800, 0 , width), 40+ColOff+n*ColSpacing, map(65, 0, 600, 0 , height))) {
 
-                if (mouseButton==LEFT) {
+               
                   huePik = colorsV[v];
 
                   drawSat=0;
-                  drawBri=huePik;
-                }
-                else {
-                  background(0, 0, colorsV[v]);
-                }
+               
               }
             }
           }
