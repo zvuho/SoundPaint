@@ -1,8 +1,17 @@
 # SoundPaint
 
-![UI Snapshot 1](SOUNDPAINT%20UI%20SNAPSHOT.png)
+![UI Snapshot 1](SoundPaint%20UI%201.png)
+You can create semi symetric melodies this way: 
+"ta di da di ta" 
+"tu du di du tu"
 
-[[https://github.com/zvuho/SoundPaint/blob/master/SOUNDPAINT%20UI%20SNAPSHOT.png|alt=SoundPaint UI]]
+
+![UI Snapshot 2](SoundPaint%20UI%202.png)
+Use it as a music notation system
+To visualize in a different way while you compose a song.
+
+And many other ways to use it...
+
 
 ## Intro
 
