@@ -123,3 +123,10 @@ ListenBW();
 void mouseReleased() {
   ButtonsChk();
 }
+void mouseClicked() {
+  ButtonsChk();
+}
+
+void mousePressed() {
+  ButtonsChk();
+}

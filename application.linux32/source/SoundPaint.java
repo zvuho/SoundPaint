@@ -146,6 +146,13 @@ ListenBW();
 public void mouseReleased() {
   ButtonsChk();
 }
+public void mouseClicked() {
+  ButtonsChk();
+}
+
+public void mousePressed() {
+  ButtonsChk();
+}
  
   public void ButtonsChk(){
     //map(Val, 0, 800, 0 , width)
@@ -227,9 +234,9 @@ public void mouseReleased() {
       if (BW==false) {
 
           if (Inv==false) {
-            for (n=0;n<13;n++) {
+            for (n=0;n<12;n++) {
 
-              if (inside(ColOff+n*ColSpacing, map(20, 0, 800, 0 , width), 40+ColOff+n*ColSpacing, map(65, 0, 600, 0 , height))) {
+              if (inside(ColOff+n*ColSpacing, map(20, 0, 800, 0 , width), 40+ColOff+n*ColSpacing, map(650, 0, 600, 0 , height))) {
 
      
                   huePik = colors[12-n];
@@ -242,7 +249,7 @@ public void mouseReleased() {
             }
           }
           if (Inv==true) {
-            for (v=0;v<13;v++) {
+            for (v=0;v<12;v++) {
 
               if (inside(ColOff+v*ColSpacing,  map(20, 0, 800, 0 , width), 40+ColOff+n*ColSpacing, map(65, 0, 600, 0 , height))) {
                   huePik = colorsV[v];
@@ -258,7 +265,7 @@ public void mouseReleased() {
       
       if (BW==true) {
          if (Inv==false) {
-            for (n=0;n<13;n++) {
+            for (n=0;n<12;n++) {
 
               if (inside(ColOff+n*ColSpacing, map(20, 0, 800, 0 , width), 40+ColOff+n*ColSpacing, map(65, 0, 600, 0 , height))) {
 
@@ -271,7 +278,7 @@ public void mouseReleased() {
           }
 
           if (Inv==true) {
-            for (v=0;v<13;v++) {
+            for (v=0;v<12;v++) {
 
               if (inside(ColOff+v*ColSpacing, map(20, 0, 800, 0 , width), 40+ColOff+n*ColSpacing, map(65, 0, 600, 0 , height))) {
 
