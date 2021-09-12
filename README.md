@@ -1,17 +1,5 @@
 # SoundPaint
 
-![UI Snapshot 1](SoundPaint%20UI%201.png)
-You can create semi symetric melodies this way: 
-"ta di da di ta" 
-"tu du di du tu"
-
-
-![UI Snapshot 2](SoundPaint%20UI%202.png)
-Use it as a music notation system
-To visualize in a different way while you compose a song.
-
-And many other ways to use it...
-
 
 ## Intro
 
@@ -21,23 +9,50 @@ You need a processing IDE and import the MINIM audio library.
 
 There s a colors palette in the shape of a piano, each key color is calibrated to sound like that piano key when the LISTEN mode is on.
 
-There are two LISTEN modes:
+
+
+![UI Snapshot 1](SoundPaint%20UI%201.png)
+You can create semi symetric melodies this way: 
+"ta di da di ta" 
+"tu du di du tu"
+
+
+
+
+![UI Snapshot 2](SoundPaint%20UI%202.png)
+Use it as a music notation system
+To visualize in a different way while you compose a song.
+
+
+
+
+![UI Snapshot BW](SoundPaint%20UI%20BW.png)
+Grayscale mode where you can applay the previous concepts too
+
+
+And many other ways to use it...
+
+
+## There are many ways to LISTEN to your drawings:
 
 Mouse driven: SoundPaint will get the color code under the mouse or fingertip and translate it to sound in a configurable relationship between the colors spectrum and the sound spectrum.
 
-Bug driven: it will get the color from under a little bug that will crawl on the drawing walking in random directions.
+Bug driven: A little bug that will crawl on the drawing walking in random directions making sound on its way.
 
-There is a grayscale mode. You only paint with shades of gray and instead of hue, brightness is used to tune the sound.
+
+
+Grayscale mode. You only paint with shades of gray and instead of hue, brightness is used to tune the sound.
 
 You can choose between the 7 octaves of a real piano, and flip the color to sound mapping, so high pitch is red instead of blue.
 
-The paint mode has a Blank boton that clears the canvas.
+The paint mode is most basic but has a Blank boton that clears the canvas.
+A dropper to pick any color from the screen. No Undo, sorry.
 You can choose from the piano colors or from a "continuous" palette, but beware... colors that are not calibrated will sound like a untunned piano so to speak.
 
 I had a version that that could open any bmp or jpg so you could listen to photos, etc. And save the drawings as well. It had MIDI output option, but I lost the files. Sorry.
 
 
-##Features still to develop:
+## Features still to develop:
 
 THIS IS MEANT TO BE A PROOF OF CONCEPT.
 Many things to improve
@@ -56,10 +71,10 @@ Many things to improve
 - Phone camera eyetracking to be one step closer to "listening with the eyes" in the way that syneste..tic people do.
 
 
-# Process
+## Process
 
 
-Intro:
+### Intro:
 
 This project continues the process of this very simple program that I started in 2008:
 
@@ -79,6 +94,8 @@ Simple Paint by Ferhat Sen!
 
 Http://openprocessing.org/visuals/?visualID=13510
 Here you used to be able to try it, broken link now.
+
+### Version history
 
 I attached my "Color to Sound" to the "Simple Paint" that I found. Like sewing a dog head to a snake tail.
 So a "Mode" variable chooses between the two forms of operation (draw or listen) at the beginning of each processing cycle. 
