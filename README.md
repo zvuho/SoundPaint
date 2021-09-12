@@ -1,5 +1,7 @@
 # SoundPaint
 
+[[https://github.com/zvuho/SoundPaint/blob/master/SOUNDPAINT%20UI%20SNAPSHOT.png|SoundPaint UI]]
+
 ## Intro
 
 Lets you listen to your drawing or any pic. In an interactive or semirandom way. In a flexible relationship between colors and musical notes.
@@ -26,14 +28,21 @@ I had a version that that could open any bmp or jpg so you could listen to photo
 
 ##Features still to develop:
 
-I would like to create a "synesthia mode", it's not a linear mapping of color and frequency.
-Or being able to create "Custom made" pianos, asociating arbitrarily notes and colors without relationship betwen them all. Just make each color sound like any Hertz value or musical note in each piano key.
+THIS IS MEANT TO BE A PROOF OF CONCEPT.
+Many things to improve
 
-Multiple singing bugs each configurable: speed on canvas, octave, twitch ammount
+- Take the botons out of the rendering area to some settings windows. Leave at hand only the most used options
 
+- Or being able to create "Custom made" pianos, asociating arbitrarily notes and colors without relationship betwen them all. Just make each color sound like any Hertz value or musical note in each piano key.
 
+- I would like to create a "synesthia mode" a preset with with colors and notes associated as syneste...tic? people associate them.
 
-I would like to try the program with "eyetracking" to be one step closer to "listening with the eyes" in the way that this program proposes.
+- Multituch touches[], one synth for each finger.
+- Multiple singing bugs each configurable: speed on canvas, octave, twitch ammount
+
+- Currently you listen to one pixel under finger, Multi pixel Mode would listen to mean, max, min etc.. of a multi point matix centred under the finger.
+
+- Phone camera eyetracking to be one step closer to "listening with the eyes" in the way that syneste..tic people do.
 
 
 # Process
