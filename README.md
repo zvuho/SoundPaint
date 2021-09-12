@@ -1,5 +1,14 @@
 # SoundPaint
 
+
+## Intro
+
+Lets you listen to your drawing or any pic. In an interactive or semirandom way. In a flexible relationship between colors and musical notes.
+
+You need a processing IDE and import the MINIM audio library.
+
+There s a colors palette in the shape of a piano, each key color is calibrated to sound like that piano key when the LISTEN mode is on.
+
 ![UI Snapshot 1](SoundPaint%20UI%201.png)
 You can create semi symetric melodies this way: 
 "ta di da di ta" 
@@ -10,24 +19,21 @@ You can create semi symetric melodies this way:
 Use it as a music notation system
 To visualize in a different way while you compose a song.
 
+![UI Snapshot BW](SoundPaint%20UI%2BW.png)
+Grayscale mode where you can applay the previous concepts too
+
 And many other ways to use it...
 
 
-## Intro
-
-Lets you listen to your drawing or any pic. In an interactive or semirandom way. In a flexible relationship between colors and musical notes.
-
-You need a processing IDE and import the MINIM audio library.
-
-There s a colors palette in the shape of a piano, each key color is calibrated to sound like that piano key when the LISTEN mode is on.
-
-There are two LISTEN modes:
+## There are many ways to LISTEN to your drawings:
 
 Mouse driven: SoundPaint will get the color code under the mouse or fingertip and translate it to sound in a configurable relationship between the colors spectrum and the sound spectrum.
 
-Bug driven: it will get the color from under a little bug that will crawl on the drawing walking in random directions.
+Bug driven: A little bug that will crawl on the drawing walking in random directions making sound on its way.
 
-There is a grayscale mode. You only paint with shades of gray and instead of hue, brightness is used to tune the sound.
+
+
+Grayscale mode. You only paint with shades of gray and instead of hue, brightness is used to tune the sound.
 
 You can choose between the 7 octaves of a real piano, and flip the color to sound mapping, so high pitch is red instead of blue.
 
