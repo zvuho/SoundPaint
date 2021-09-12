@@ -19,7 +19,7 @@ You can create semi symetric melodies this way:
 Use it as a music notation system
 To visualize in a different way while you compose a song.
 
-![UI Snapshot BW](SoundPaint%20UI%2BW.png)
+![UI Snapshot BW](SoundPaint%20UI%20BW.png)
 Grayscale mode where you can applay the previous concepts too
 
 And many other ways to use it...
