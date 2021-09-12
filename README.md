@@ -37,7 +37,8 @@ Grayscale mode. You only paint with shades of gray and instead of hue, brightnes
 
 You can choose between the 7 octaves of a real piano, and flip the color to sound mapping, so high pitch is red instead of blue.
 
-The paint mode has a Blank boton that clears the canvas.
+The paint mode is most basic but has a Blank boton that clears the canvas.
+A dropper to pick any color from the screen. No Undo, sorry.
 You can choose from the piano colors or from a "continuous" palette, but beware... colors that are not calibrated will sound like a untunned piano so to speak.
 
 I had a version that that could open any bmp or jpg so you could listen to photos, etc. And save the drawings as well. It had MIDI output option, but I lost the files. Sorry.
