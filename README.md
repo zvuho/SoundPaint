@@ -1,6 +1,6 @@
 # SoundPaint
 
-[[https://github.com/zvuho/SoundPaint/blob/master/SOUNDPAINT%20UI%20SNAPSHOT.png|SoundPaint UI]]
+[[https://github.com/zvuho/SoundPaint/blob/master/SOUNDPAINT%20UI%20SNAPSHOT.png|alt=SoundPaint UI]]
 
 ## Intro
 
