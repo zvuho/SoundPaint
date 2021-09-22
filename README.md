@@ -56,6 +56,13 @@ I had a version that that could open any bmp or jpg so you could listen to photo
 
 THIS IS MEANT TO BE A PROOF OF CONCEPT.
 Many things to improve
+Tons of refactoring, botons size is mapped to the size of the screen in every frame.
+Test classes?? haha 
+It was my first attempt to making a real program.
+Its a coding mess, yes. But it works and shows the potential of the concept if farther developed.
+
+I probably leave this version as it is. And spend any coding fun time in the react and android verions.
+Anyway, issues:
 
 - Take the botons out of the rendering area to some settings windows. Leave at hand only the most used options
 
