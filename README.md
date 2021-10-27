@@ -3,9 +3,13 @@
 
 ## Intro
 
-Lets you listen to your drawing or any pic. In an interactive or semirandom way. In a flexible relationship between colors and musical notes.
+You can try the app with the compiled Windows and Linux executables.
 
-You need a processing IDE and import the MINIM audio library.
+Listen to the colors under your fingertips. 
+Your drawing or any picture, in an interactive or semirandom way. 
+Creating a flexible relationship between colors and musical notes.
+
+To work on it you need a processing IDE and import the MINIM audio library.
 
 There s a colors palette in the shape of a piano, each key color is calibrated to sound like that piano key when the LISTEN mode is on.
 
