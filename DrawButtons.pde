@@ -18,15 +18,16 @@ void DrawButtons() {
   rect(0, 0, width-1, map(65, 0, 600, 0, height));
 
 
-  //draw semitones Mapped
+  //draw key border lines
   fill(0, 0, 50);
   strokeWeight(2);
-  line(map(89, 0, 800, 0, width), map(21, 0, 600, 0, height), map(89, 0, 800, 0, width), map(64, 0, 600, 0, height));
-  line(map(215, 0, 800, 0, width), map(21, 0, 600, 0, height), map(215, 0, 800, 0, width), map(64, 0, 600, 0, height));
-  line(map(311, 0, 800, 0, width), map(21, 0, 600, 0, height), map(311, 0, 800, 0, width), map(64, 0, 600, 0, height));
-  line(map(404, 0, 800, 0, width), map(21, 0, 600, 0, height), map(404, 0, 800, 0, width), map(64, 0, 600, 0, height));
-  line(map(532, 0, 800, 0, width), map(21, 0, 600, 0, height), map(532, 0, 800, 0, width), map(64, 0, 600, 0, height));
-  line(map(658, 0, 800, 0, width), map(21, 0, 600, 0, height), map(658, 0, 800, 0, width), map(64, 0, 600, 0, height));
+  line(map(89, 0, 800, 0, width), map(17, 0, 600, 0, height), map(89, 0, 800, 0, width), map(64, 0, 600, 0, height));
+  line(map(215, 0, 800, 0, width), map(17, 0, 600, 0, height), map(215, 0, 800, 0, width), map(64, 0, 600, 0, height));
+  line(map(311, 0, 800, 0, width), map(17, 0, 600, 0, height), map(311, 0, 800, 0, width), map(64, 0, 600, 0, height));
+  line(map(404, 0, 800, 0, width), map(17, 0, 600, 0, height), map(404, 0, 800, 0, width), map(64, 0, 600, 0, height));
+  line(map(532, 0, 800, 0, width), map(17, 0, 600, 0, height), map(532, 0, 800, 0, width), map(64, 0, 600, 0, height));
+  line(map(658, 0, 800, 0, width), map(17, 0, 600, 0, height), map(658, 0, 800, 0, width), map(64, 0, 600, 0, height));
+  //semitone buttons
   strokeWeight(1);
   rect(map(65, 0, 800, 0, width), map(15, 0, 600, 0, height), map(48, 0, 800, 0, width), map(38, 0, 600, 0, height));
   rect(map(191, 0, 800, 0, width), map(15, 0, 600, 0, height), map(48, 0, 800, 0, width), map(38, 0, 600, 0, height));
@@ -164,9 +165,9 @@ void DrawButtons() {
   }
   
 
-  // draw color Piker mapped
+  // draw color Piker mapped, make method that recieves inv and bw
   if (Inv==false) {
-    if (BW==false) {
+    if (BW==false) { //THIS IS DEFAULT MODE
       int p;
       for (p=0; p<map(735, 0, 800, 0 , width); p++) {
         stroke (map(p, 0, map(734, 0, 800, 0 , width), 226, 0), 255, 255);
@@ -222,7 +223,7 @@ void DrawButtons() {
       for (n=0; n<12; n++)
       {
         fill(colors[12-n], 255, 255);
-        rect(ColOff+n*ColSpacing, map(20, 0, 600, 0 , height), map(40, 0, 800, 0 , width), map(30, 0, 600, 0 , height));
+        rect(ColOff+n*ColSpacing, map(16, 0, 600, 0 , height), map(40, 0, 800, 0 , width), map(30, 0, 600, 0 , height));
       }
     }
 
