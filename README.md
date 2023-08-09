@@ -181,7 +181,7 @@ A restless arrow, rather than a bug, if imagination does not rule in your kingdo
 I learned to make those object oriented bugs in the course of "Artificial life forms applied to the art" by Ing. Emiliano Causa. 
 
 For now that's it.
-I worked on it till 2017. The project was forgotten since then.
+I worked on it till 2017.
 
 Similar Programs:
 
