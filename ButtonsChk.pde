@@ -56,12 +56,6 @@
         BW=false;
       }
 
-      //check if HueSlider is clicked mapped
-      if (inside(ColOff, 0, map(741, 0, 800, 0 , width), map(19, 0, 600, 0 , height))) {
-        drawSat = 255;
-        drawBri = 255;
-        Huepik();
-      }
             //check if OCTAVE is clicked mapped
       if (inside(map(770, 0, 800, 0 , width), map(20, 0, 600, 0 , height), map(795, 0, 800, 0 , width), map(580, 0, 600, 0 , height))) {
           int o;
@@ -81,7 +75,7 @@
           if (Inv==false) {
             for (n=0;n<12;n++) {
 
-              if (inside(ColOff+n*ColSpacing, map(20, 0, 800, 0 , width), 40+ColOff+n*ColSpacing, map(650, 0, 600, 0 , height))) {
+              if (inside(ColOff+n*ColSpacing, map(20, 0, 800, 0 , width), 40+ColOff+n*ColSpacing, map(65, 0, 600, 0 , height))) {
 
      
                   huePik = colors[12-n];
