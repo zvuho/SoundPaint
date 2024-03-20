@@ -158,10 +158,21 @@ void DrawButtons() {
   rect(map(630, 0, 800, 0, width), map(70, 0, 600, 0 , height), map(67, 0, 800, 0, width), map(30, 0, 600, 0 , height));
   fill(0);
   if (Inv==false) {
+     if (BW==false) {
+    text("BLUE>RED", map(633, 0, 800, 0 , width), map(90, 0, 600, 0 , height));
+  }
+     if (BW==true) {
+    text("WHI>BL", map(633, 0, 800, 0 , width), map(90, 0, 600, 0 , height));
+  } 
+} 
+
+  if (Inv==true) {
+         if (BW==false) {
     text("RED>BLUE", map(633, 0, 800, 0 , width), map(90, 0, 600, 0 , height));
   }
-  if (Inv==true) {
-    text("BLUE>RED", map(633, 0, 800, 0 , width), map(90, 0, 600, 0 , height));
+      if (BW==true) {
+    text("BL>WHI", map(633, 0, 800, 0 , width), map(90, 0, 600, 0 , height));
+  }  
   }
   
 
@@ -232,7 +243,7 @@ void DrawButtons() {
       for (v=0; v<12; v++)
       {
         fill(colorsV[v], 255, 255);
-        rect(ColOff+v*ColSpacing,  map(20, 0, 600, 0 , height), map(40, 0, 800, 0 , width), map(30, 0, 600, 0 , height));
+        rect(ColOff+v*ColSpacing,  map(16, 0, 600, 0 , height), map(40, 0, 800, 0 , width), map(30, 0, 600, 0 , height));
       }
     }
   }
@@ -244,7 +255,7 @@ void DrawButtons() {
       for (n=0; n<12; n++)
       {
         fill(0, 0, colors[12-n]);
-        rect(ColOff+n*ColSpacing,  map(20, 0, 600, 0 , height), map(40, 0, 800, 0 , width), map(30, 0, 600, 0 , height));
+        rect(ColOff+n*ColSpacing,  map(16, 0, 600, 0 , height), map(40, 0, 800, 0 , width), map(30, 0, 600, 0 , height));
       }
     }
 
@@ -253,7 +264,7 @@ void DrawButtons() {
       for (v=0; v<12; v++)
       {
         fill(0, 0, colorsV[v]);
-        rect(ColOff+v*ColSpacing,  map(20, 0, 600, 0 , height), map(40, 0, 800, 0 , width), map(30, 0, 600, 0 , height));
+        rect(ColOff+v*ColSpacing,  map(16, 0, 600, 0 , height), map(40, 0, 800, 0 , width), map(30, 0, 600, 0 , height));
       }
     }
   }

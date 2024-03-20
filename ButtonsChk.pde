@@ -75,7 +75,7 @@
           if (Inv==false) {
             for (n=0;n<12;n++) {
 
-              if (inside(ColOff+n*ColSpacing, map(20, 0, 800, 0 , width), 40+ColOff+n*ColSpacing, map(65, 0, 600, 0 , height))) {
+              if (inside(ColOff+n*ColSpacing, map(16, 0, 800, 0 , width), 40+ColOff+n*ColSpacing, map(65, 0, 600, 0 , height))) {
 
      
                   huePik = colors[12-n];
@@ -90,7 +90,7 @@
           if (Inv==true) {
             for (v=0;v<12;v++) {
 
-              if (inside(ColOff+v*ColSpacing,  map(20, 0, 800, 0 , width), 40+ColOff+n*ColSpacing, map(65, 0, 600, 0 , height))) {
+              if (inside(ColOff+v*ColSpacing,  map(16, 0, 800, 0 , width), 40+ColOff+n*ColSpacing, map(65, 0, 600, 0 , height))) {
                   huePik = colorsV[v];
                   drawSat=255;
                   drawBri=255;
@@ -106,7 +106,7 @@
          if (Inv==false) {
             for (n=0;n<12;n++) {
 
-              if (inside(ColOff+n*ColSpacing, map(20, 0, 800, 0 , width), 40+ColOff+n*ColSpacing, map(65, 0, 600, 0 , height))) {
+              if (inside(ColOff+n*ColSpacing, map(16, 0, 800, 0 , width), 40+ColOff+n*ColSpacing, map(65, 0, 600, 0 , height))) {
 
                   huePik = colors[12-n];
                   drawSat=0;
@@ -119,7 +119,7 @@
           if (Inv==true) {
             for (v=0;v<12;v++) {
 
-              if (inside(ColOff+v*ColSpacing, map(20, 0, 800, 0 , width), 40+ColOff+n*ColSpacing, map(65, 0, 600, 0 , height))) {
+              if (inside(ColOff+v*ColSpacing, map(16, 0, 800, 0 , width), 40+ColOff+n*ColSpacing, map(65, 0, 600, 0 , height))) {
 
                
                   huePik = colorsV[v];
